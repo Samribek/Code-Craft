@@ -1,0 +1,262 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section.team {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #99d6e4;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+card::before {
+  content: "★";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: gold;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+
+.card::after {
+  content: "New";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-size: 0.8em;
+}
+.card:hover {
+  transform: translateY(-5px);
+  color: #add0cc;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: gray;
+}
+
+
+.card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+ul.social {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card  a[href^="mailto"] {
+  
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #ea1b1b;
+}
+.nav-bar {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #8ad3f8;
+  color: #79cdeb;
+}
+a[href^="mailto"] {
+  color: rgb(237, 30, 15);
+  font-weight: bold;
+}
+section.pricing {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  padding: 2em;
+  background: #f1f1dc;
+  justify-content: center;
+  position: relative;
+}
+.content-box {
+  box-sizing: content-box;
+  background: #9ec3e1;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+#basic {
+  box-sizing: content-box;
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+#pro {
+  box-sizing: border-box;
+  background: #e0e6dd;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  flex: 1;
+  position: relative;
+}
+
+#enterprise {
+  box-sizing: border-box;
+  background: #f0d0c0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  flex: 1;
+}
+#pro.featured::before {
+  content: " ★  Most Popular";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: rgb(241, 194, 108);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-size: 0.8em;
+}
+section.pricing {
+  display: flex;
+  gap: 20px;
+}
+.plan {
+  width: 200px;
+  position: relative;
+  text-align: center;
+}
+
+.plan:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0.9;
+  pointer-events: none;
+}
+header.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #eef;
+  overflow: hidden;
+}
+
+header.hero nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  gap: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(142, 72, 72, 0.1);
+  z-index: 10;
+}
+
+
+header.hero nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+header.hero nav a {
+  display: inline-block;
+}
+.header .content {
+  max-width: 50%;
+  padding: 20px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2a8beb;
+}
+.hero-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+@media(max-width: 768px) 
+{
+  header.hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-bg {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+@media(min-width: 640px) {
+  body {
+    background-color: #89ddd3;
+  }
+  }
+  @media(min-width: 768px) {
+  body {
+    background-color: #e1adf4;
+}
+@media(min-width: 1024px) {
+  body {
+    background-color: #99d6e4;
+  }
+}
+
+
+@media(min-width: 1280px) {
+  body {
+    background-color: #f0d0c0;
+  }
+}
