@@ -6,7 +6,7 @@
 }
 section.team {
   display: flex;
-  gap: 20px;
+  gap: 125px;
   padding: 20px;
   background-color: #99d6e4;
 }
@@ -57,7 +57,7 @@ card::before {
 .card img {
   width: 100%;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 ul.social {
   list-style: none;
@@ -74,7 +74,7 @@ ul.social {
 }
 .nav-bar {
   display: flex;
-  gap: 20px;
+  gap: 70px;
   padding: 10px;
   background-color: #8ad3f8;
   color: #79cdeb;
