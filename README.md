@@ -71,5 +71,3 @@
   left: 60%;
   animation: animate 21s linear infinite; /* Varied duration */
 }
-
-/* ... (rest of your SCSS code) ... */
