@@ -16,8 +16,3 @@
 - Used **Flexbox** for layout and **absolute positioning** for image layering.
 - Made nav bar sticky and tested behavior.
 - Practiced media queries for responsive design.
-
-## Notes:
-- Font Awesome is used for social icons.
-- All styles are included in `style.css` with comments for clarity.
-- Layout responsiveness tested on small screens.
