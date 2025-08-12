@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTFF-8">
         <meta name="viewport"content="width=device-width,initial-scaled=1.0">
+        <link rel="stylesheet" href="style.css">
 
         <title>code craft| frontend development hub</title>
     </head>
@@ -13,33 +14,37 @@
                     <div class="logo:">
                         <span>codecraft</span>
                     </div>
-                    <ul>
+                    <nav class="nav-component">
+                    <ul class="nav-bar">
                     <li><a href="#home">home</a></li>
                      <li><a href="#Industry Insights">Industry Insights</a></li>
                       <li><a href="#Technology Rader">Technology Rader</a></li>
                        <li><a href="#Learning Roadmaps">Learning Roadmaps</a></li>
                         <li><a href="#projects">Projects</a></li>
                          <li><a href="#mentors">mentors</a></li>
-                          <li><a href="#contact">contact</a>
+                          <li><a href="#contact">contact</a></li>
+                    </ul>
+                    </nav>
         <selection>
-            <div>
-                <h1>master frontend development in 2024</h1>
-                <p>join our community of developers and stay ahead with the latest trends,tools,and techniques in frontend development .learn,build,and grow with codecraft</p>
+            <div class="hero">
+                <h1>Master Frontend Development in 2024</h1>
+                <p>join our community of developers and stay ahead with the latest trends,tools,
+                    and techniques in frontend development learn,build,and grow with codecraft</p>
                 <a href="">start learning</a> 
-            </div>
+             </div>
         </selection>
         <selection>
              <form id="Industry Insights">
             <div class="container">
                 <h3>Industry Insights</h3>
-        <div>
+        <div class="insights">
             <h2>salery trend </h2>
             <p><strong>junior frontend developer:</strong>$55k-$75k(us) ,&euro;28k- &euro;42k(eu)</p>
             <p><strong>mid-level frontend developer:</strong>$75k-$110k(us) ,&euro;28k- &euro;42k(eu)</p>
             <p><strong>senior frontend developer:</strong>$110k-$160k(us) ,&euro;28k- &euro;42k(eu)</p>
             <p><strong>frelance frontend developer:</strong>$40k-$120/hr depending on experience and region</p>
             </div>
-            <div>
+            <div class="insights">
                   <h2>job market </h2>
             <p><strong>top hiring companies:</strong>Goggle,meta,Shopify</p>
             <p><strong>trending startups:</strong>Figma,notion</p>
@@ -260,8 +265,8 @@
          <form id="mentors">
         <h2>Meet Our Mentors</h2>
         <div>
-            <div>
-                 <img scr="c:\Users\Hi-Tech\AppData\Local\Temp\Rar$DIa18356.27907\feti.jpg">
+            <div class="card" id="user1">
+                 <img src="feti.jpg">
                 <h3>Fatiha Abdurahim</h3>
                 <p>Fullstack developer</p>
                 <div><section>
@@ -271,8 +276,8 @@
                      </div>
                 </div>
             </div>
-            <div>
-                <img scr="c:\Users\Hi-Tech\AppData\Local\Temp\Rar$DIa18356.32704\dandi.jpg">
+            <div class="card" id="user2">
+                <img src="dandi.jpg">
                 <h3>Handi Hirco</h3>
                  <p>Fullstack developer</p>
                 <div>
@@ -282,8 +287,8 @@
                       </div>
                 </div>
         </div>
-          <div>
-                <img scr="c:\Users\Hi-Tech\AppData\Local\Temp\Rar$DIa18356.36626\nafi.jpg">
+          <div class="card" id="user3">
+                <img src="nafi.jpg">
                 <h3>Nafagri Damena</h3>
                 <p>Fullstack developer and Visual Artist</p>
                 <div>

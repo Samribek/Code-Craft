@@ -56,6 +56,23 @@ console.log(factorial(5));
 console.log('');
 //Task 2: Fibonacci Sequence
 // The Fibonacci sequence starts with 0 and 1, and each subsequent number is the sum of the previous two 
+function fibonacci(n) {
+    if (n < 0) {
+        return 'Fibonacci sequence is not defined for negative numbers';
+    }
+    if (n === 0) {
+        return [0];
+    }
+    if (n === 1) {
+        return [0, 1];
+    }
+    let fib = [0, 1];
+    for (let i = 2; i <= n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib;
+}
+console.log(fibonacci(5));
 //Task 3: Find Prime Numbers
 //Note: A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
 function primeNumbers(n) {
